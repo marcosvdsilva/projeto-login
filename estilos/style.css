@@ -1,2 +1,51 @@
 @charset "UTF-8";
 
+/* Paleta de cores
+Laranja: #DA572D
+Laranja escuro: #A42800
+Azul: #3B7597 */
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #da572d;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute; /*config para ficar no meio da tela*/
+    top: 50%; /*config para ficar no meio da tela*/
+    left: 50%; /*config para ficar no meio da tela*/
+    transform: translate(-50%, -50%); /*config para ficar no meio da tela*/
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+}
+
+section#login > div#imagem {
+    background: #da572d url(../imagens/pattern.jpg) no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+section#login > div#formulario {
+    padding: 10px;
+    display: block;
+}
